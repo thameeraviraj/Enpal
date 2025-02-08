@@ -1,7 +1,6 @@
 ﻿using AppointmentBooking.Data;
 using AppointmentBooking.DTOs;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
 
 namespace AppointmentBooking.Services
 {
@@ -29,6 +28,7 @@ namespace AppointmentBooking.Services
             try
             {
                 var requiredLanguage = new[] { criteria.Language };
+
                 //Find Sales Managers matching criteria
                 var matchingManagers = await _context.SalesManagers
                     .Where(sm => sm.Languages.Contains(criteria.Language) &&

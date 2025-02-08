@@ -1,6 +1,5 @@
 ﻿using AppointmentBooking.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AppointmentBooking.Data
 {

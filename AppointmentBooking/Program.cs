@@ -9,8 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
-           .LogTo(Console.WriteLine, LogLevel.Information) // Logs SQL to Console
-           .EnableSensitiveDataLogging() // Enables parameter values in logs (optional)
 );
 
 // Register services
@@ -30,7 +28,7 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Enable CORS (If needed for frontend requests)
+// Enable CORS 
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins", builder =>

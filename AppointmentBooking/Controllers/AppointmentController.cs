@@ -1,7 +1,6 @@
 ﻿using AppointmentBooking.DTOs;
 using AppointmentBooking.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace AppointmentBooking.Controllers
 {

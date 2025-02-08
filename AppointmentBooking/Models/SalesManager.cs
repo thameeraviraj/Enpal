@@ -21,7 +21,5 @@ namespace AppointmentBooking.Models
         
         [Column("customer_ratings")]
         public string[] CustomerRatings { get; set; } = Array.Empty<string>();
-
-        //public List<Slot> Slots { get; set; }
     }
 }

@@ -18,7 +18,6 @@ namespace AppointmentBooking.Models
         public bool Booked { get; set; }
         [Column("sales_manager_id")]
         public int SalesManagerId { get; set; }
-
         public SalesManager SalesManager { get; set; }
     }
 }
