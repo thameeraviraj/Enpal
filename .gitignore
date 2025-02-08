@@ -1,0 +1,44 @@
+# ASP.NET Core build directories
+bin/
+obj/
+
+# User-specific files
+.vs/
+.vscode/
+.idea/
+
+# User-specific files on Windows
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# ASP.NET Core config files
+appsettings.json
+appsettings.*.json
+
+# Dependency directories (node_modules in any location)
+**/node_modules/
+
+# NPM logs
+npm-debug.log
+yarn-error.log
+
+# Build directories for Docker
+.docker/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# JetBrains Rider
+.idea/
+
+# DotCover files
+.idea/.idea
+.idea/.cache
+
+# Rider files
+.idea/

@@ -1,0 +1,21 @@
+
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:8080"
+    depends_on:
+      - db
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=coding-challenge;Username=postgres;Password=mypassword123!
+
+  db:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    ports:
+      - "5432:5432"
+
