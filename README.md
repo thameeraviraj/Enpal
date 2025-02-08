@@ -1,7 +1,7 @@
 # Appointment Booking
 
 ## How to run the application
-go to project
+Go to project directory "AppointmentBooking", and execute 
 ```bash
 docker compose up --build
 ```
